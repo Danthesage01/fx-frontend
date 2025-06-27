@@ -211,14 +211,14 @@ export function Pagination({
           <button
             onClick={goToPrevious}
             disabled={!pagination.hasPrev}
-            className={`flex items-center space-x-2 px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+            className={`flex items-center space-x-2 px-2 py-2 text-sm font-medium rounded-lg transition-colors ${
               pagination.hasPrev
                 ? "text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-600 hover:bg-gray-50 dark:hover:bg-gray-500 border border-gray-300 dark:border-gray-500"
                 : "text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 cursor-not-allowed"
             }`}
           >
             <ChevronLeft className="h-4 w-4" />
-            <span>Previous</span>
+            <span>Prev</span>
           </button>
 
           {/* Page indicator */}
@@ -228,7 +228,7 @@ export function Pagination({
               <button
                 key={pageNum}
                 onClick={() => goToPage(pageNum)}
-                className={`w-10 h-10 text-sm rounded-lg font-medium transition-colors ${
+                className={`w-8 h-8 text-sm rounded-lg font-medium transition-colors ${
                   pageNum === currentPage
                     ? "bg-blue-600 text-white shadow-sm"
                     : "text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-600 hover:bg-gray-50 dark:hover:bg-gray-500 border border-gray-300 dark:border-gray-500"
@@ -243,7 +243,7 @@ export function Pagination({
           <button
             onClick={goToNext}
             disabled={!pagination.hasNext}
-            className={`flex items-center space-x-2 px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+            className={`flex items-center space-x-2 px-2 py-2 text-sm font-medium rounded-lg transition-colors ${
               pagination.hasNext
                 ? "text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-600 hover:bg-gray-50 dark:hover:bg-gray-500 border border-gray-300 dark:border-gray-500"
                 : "text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 cursor-not-allowed"

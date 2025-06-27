@@ -120,7 +120,7 @@ export const apiSlice = createApi({
  reducerPath: "api",
  tagTypes: ["User", "UserProfile", "Currencies", "Conversions", "Conversion", "ConversionSummary", "ExchangeRate"],
  baseQuery: axiosBaseQuery({
-  baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL || "",
+  baseUrl: process.env.NEXT_PUBLIC_API_URL || "",
   showErrorToasts: true,
   showSuccessToasts: true,
  }),
