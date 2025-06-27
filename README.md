@@ -2,7 +2,9 @@
 
 A modern, fully responsive currency exchange application built with Next.js, featuring real-time exchange rates, transaction management, and comprehensive audit trails.
 
-Important notice the exchangerate api has a limit for free users
+Important Notice: The ExchangeRate API has usage limits for free users. Consider upgrading to a paid plan for production use.
+
+Also, the backend is hosted on an hosting server free plan and it sometimes shuts down if it's not been used for a while, leading to an longer response time.
 
 ## 🌟 Features
 
