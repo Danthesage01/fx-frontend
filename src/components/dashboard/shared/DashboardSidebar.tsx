@@ -185,7 +185,7 @@ export default function DashboardSidebar({
         </nav>
 
         {/* Logout Button */}
-        <div className="py-3 border-t border-gray-200 dark:border-gray-700">
+        <div className="pb-3 border-t border-gray-200 dark:border-gray-700">
           <button
             onClick={handleLogout}
             className={`
