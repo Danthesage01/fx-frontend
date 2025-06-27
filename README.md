@@ -6,6 +6,8 @@ Important Notice: The ExchangeRate API has usage limits for free users. Consider
 
 Also, the backend is hosted on an hosting server free plan and it sometimes shuts down if it's not been used for a while, leading to an longer response time.
 
+According to the provider - "Your free instance will spin down with inactivity, which can delay requests by 50 seconds or more."
+
 ## 🌟 Features
 
 ### 💱 Currency Exchange
