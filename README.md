@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Currency Exchange Frontend
 
-## Getting Started
+A modern, fully responsive currency exchange application built with Next.js, featuring real-time exchange rates, transaction management, and comprehensive audit trails.
 
-First, run the development server:
+Important notice the exchangerate api has a limit for free users
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 💱 Currency Exchange
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Real-time exchange rates** from multiple providers
+- **Instant conversion calculations** with precise formatting
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 📱 Fully Responsive Design
 
-## Learn More
+- **Mobile-first approach** with progressive enhancement
+- **Adaptive layouts** for desktop, tablet, and mobile
+- **No horizontal scrolling** on any device
+- **Accessible navigation** and components
 
-To learn more about Next.js, take a look at the following resources:
+### 📊 Transaction Management
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Complete transaction history** with advanced filtering
+- **Smart pagination** (backend + frontend hybrid)
+- **Real-time transaction tracking** and status updates
+- **CSV export functionality** for data analysis
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 🔍 Advanced Filtering & Search
 
-## Deploy on Vercel
+- **Multi-criteria filtering** (currency, date, amount)
+- **Real-time search** across all transaction data
+- **Date range selections** with preset options
+- **Smart filter persistence** and URL state management
+- **Visual filter indicators** and easy clearing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🛡️ Security & Audit
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Comprehensive audit trail** with detailed event logging
+- **User activity tracking** (logins, conversions, profile changes)
+- **IP address and browser detection** for security monitoring
+- **Failed login attempt tracking** and security alerts
+- **Session management** and token refresh handling
+
+### 🎨 Modern UI/UX
+
+- **Skeleton Loading states** and skeleton screens
+- **Error boundaries** and graceful error handling
+- **Toast notifications** for user feedback
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.0 or higher
+- npm package manager
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/currency-exchange-frontend.git
+   cd currency-exchange-frontend
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+
+   ```bash
+   cp .env.example .env.local
+   ```
+
+   Configure the following variables:
+
+   ```env
+   NEXT_PUBLIC_API_URL=http://localhost:8000/api
+   NEXT_PUBLIC_APP_NAME=FX Converter
+   NEXT_PUBLIC_APP_DESCRIPTION=Seamless FX Converter for Global Commerce
+   ```
+
+4. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
+
+## 📱 Responsive Design Implementation
+
+## 🛠️ Technology Stack
+
+### Core Framework
+
+- **Next.js 14+** - React framework with App Router
+- **TypeScript** - Type-safe JavaScript development
+- **React 18** - Latest React features and concurrent rendering
+
+### Styling & UI
+
+- **Tailwind CSS** - Utility-first CSS framework
+- **Lucide React** - Beautiful icon library
+- **CSS Grid & Flexbox** - Modern layout techniques
+
+### State Management
+
+- **RTK Query** - Data fetching and caching
+- **Redux Toolkit** - Predictable state container
+
+### Development Tools
+
+- **ESLint** - Code linting and formatting
+- **Prettier** - Code formatting
+
+- **TypeScript** - Static type checking
