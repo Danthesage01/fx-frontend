@@ -174,7 +174,7 @@ const RegisterPage: React.FC = () => {
         </div>
 
         <div className="mt-6 text-center">
-          <p className="text-sm text-gray-600 dark:text-gray-400">
+          <p className="text-xs text-gray-600 dark:text-gray-400">
             By continuing, you agree to our{" "}
             <Link
               href="/terms"
