@@ -73,6 +73,13 @@ const LoginPage: React.FC = () => {
   return (
     <div className="h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900">
       <div className="w-full max-w-md p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+        <a
+          className="text-red-700 italic text-[14px] hover:underline hover:underline-offset-4"
+          href={`${process.env.NEXT_PUBLIC_API_URL}/health`}
+          target="__blank"
+        >
+          Is backend server up?
+        </a>{" "}
         <div className="text-center">
           <Link
             href="/"
@@ -88,7 +95,6 @@ const LoginPage: React.FC = () => {
             </div>
           </Link>
         </div>
-
         <form
           onSubmit={handleSubmit}
           className="space-y-6"
@@ -136,7 +142,6 @@ const LoginPage: React.FC = () => {
             {isLoginLoading ? "Logging in..." : "Continue"}
           </button>
         </form>
-
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600 dark:text-gray-400">
             Don't have an account?
@@ -148,7 +153,6 @@ const LoginPage: React.FC = () => {
             </Link>
           </p>
         </div>
-
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600 dark:text-gray-400">
             By continuing, you agree to our{" "}

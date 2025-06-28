@@ -83,6 +83,13 @@ const RegisterPage: React.FC = () => {
   return (
     <div className="h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900">
       <div className="w-full max-w-md p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+        <a
+          className="text-red-700 italic text-[14px] hover:underline hover:underline-offset-4"
+          href={`${process.env.NEXT_PUBLIC_API_URL}/health`}
+          target="__blank"
+        >
+          Is backend server up?
+        </a>
         <div className="text-center">
           <Link
             href="/"
